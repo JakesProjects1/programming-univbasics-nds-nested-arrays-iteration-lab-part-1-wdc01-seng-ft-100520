@@ -8,7 +8,7 @@ def find_even_values(src)
   while row_index < src.count do
     element_index = 0
     while element_index < src[row_index].count
-      if element_index % 2 == 0 
+      if element_index.even?
         p src[row_index][element_index]
       end
       element_index += 1
